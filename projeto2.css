@@ -1,0 +1,312 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #34c5f1;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#lua {
+    font-size: 50px;
+}
+
+header div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+header p {
+    display: flex
+}
+
+.encaminho {
+    display: flex;
+    min-width: 80%;
+    justify-content: flex-end;
+    align-content:space-around;
+    margin: 0 auto;
+    padding: 20px;
+    list-style: none;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.encaminho i {
+    color:aqua
+}
+
+.encaminho li {
+    padding-right: 15px;
+}
+
+.encaminho li a:hover{
+    background-color:rgba(255, 255, 255, 0.15);
+    color:#bcedfc;
+    transition: 400ms;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background-image: url(./pexels-min-an-813269.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background-size: cover;
+    /*background: linear-gradient(to right, #0f2027, #203a43, #2c5364);*/
+    /*background-color: #101;*/
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 60px;
+    padding: 15px;
+}
+
+.container .name h5 {
+    font-size: 25px;
+    padding: 15px;
+}
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+#animation {
+    transition: 400ms
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+        transition: 500ms;
+    }
+}
+
+.rotate {
+    transform: rotate(-180deg);
+    transition: 500ms;
+}
+
+.active {
+    display: block !important;
+    transition: 400ms;
+}
+
+#about p {
+    max-width: 600px;
+    text-align:justify ;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    border: thick double #34c5f1;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+    background-color:#34c5f1;
+    color: #333333;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 400ms;
+    border: none;
+    border-radius: 5px;
+}
+
+.form button:hover {
+    background-color: #bcedfc;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    #lua {
+        font-size: 36px;
+        padding: 15px;
+    }
+
+    ul {
+        margin: 10px 20px;
+        padding: 5px;
+        list-style: none;
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 700;
+    }
+
+    header p {
+        display: flex;
+        font-size: 30px;
+    }
+
+    header ul {
+        display: flex;
+        max-width: 50%;
+        justify-content: flex-end;
+        align-content:flex-end;
+        margin: 0 auto;
+    }
+
+    .encaminho i {
+        display:none
+    }
+
+    .container .name h1 {
+        font-size: 60px;
+    }
+    
+    .container .name h5 {
+        font-size: 25px;
+        margin: 0 15px;
+    }
+
+    #arrow {
+        font-size: 25px;
+        cursor: pointer;
+        animation: blink 1s steps(5, start) infinite;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align:justify ;
+        margin: 0 auto;
+    }
+
+    .form {
+        width: 80%;
+        margin: 0 auto;
+        border: thick double #34c5f1;
+        border-radius: 10px;
+        padding: 5px;
+        margin-top: 20px;
+    }
+    
+    .form input {
+        width: 60%;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+    .form button {
+        width: 35%;
+        padding: 5px 10px;
+        background-color:#34c5f1;
+        color: #333333;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 400ms;
+        border: none;
+        border-radius: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    #lua {
+        font-size: 25px;
+    }
+
+    ul {
+        margin: 10px 20px;
+        padding: 5px;
+        list-style: none;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 700;
+    }
+
+    header p {
+        display: none
+    }
+
+    header ul {
+        display: flex;
+        max-width: 50%;
+        justify-content: flex-end;
+        align-content:flex-end;
+        margin: 0 auto;
+    }
+
+    .encaminho i {
+        display:none
+    }
+
+    .container .name h1 {
+        font-size: 30px;
+        margin-top: -40px;
+    }
+    
+    .container .name h5 {
+        font-size: 14px;
+        margin: 0 15px;
+    }
+
+    #arrow {
+        font-size: 25px;
+        cursor: pointer;
+        animation: blink 1s steps(5, start) infinite;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align:justify ;
+        margin: 0 auto;
+    }
+
+    .form {
+        width: 100%;
+        margin: 0 auto;
+        border: thick double #34c5f1;
+        border-radius: 10px;
+        padding: 5px;
+        margin-top: 20px;
+    }
+    
+    .form input {
+        width: 60%;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+    .form button {
+        width: 35%;
+        padding: 5px 10px;
+        background-color:#34c5f1;
+        color: #333333;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 400ms;
+        border: none;
+        border-radius: 5px;
+    }
+
+}
